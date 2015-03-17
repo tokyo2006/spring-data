@@ -14,7 +14,7 @@ interface PersonRepository extends Repository<User, Long> {
 }
 ```
 1. 
-使用Spring来为这些接口创建代理实例。也可以通过[JavaConfig](java_config.md):
+使用Spring来为这些接口创建代理实例。也可以通过[JavaConfig](java_config.md): 
 
 ```java
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
