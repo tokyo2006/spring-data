@@ -31,4 +31,6 @@
               * [Spring命名空间](spring_namespace.md)
               * [基于配置的声明](annotation_configuration.md)
          * [持久化实体](persisting_entity.md)
+              * [保存实体](save_entity.md)
+         * [查询方法](jpa_query_methods.md)
 
