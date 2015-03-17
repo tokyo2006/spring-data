@@ -33,4 +33,49 @@ public interface CrudRepository<T, ID extends Serializable> extends Repository<T
 
 6.是否存在所给的ID实例
 
->我们还提供了特别技术的持久性抽象,例如JpaRepository或者MongoRepository.这些接口扩展了CrudRepository
+>我们还提供了特别技术的持久性抽象,例如JpaRepository或者MongoRepository.这些接口扩展了CrudRepository和暴露了在基本持久技术中增加的潜在持久行技术接口，例如增删改查
+
+在CrudRepository之上还有一个PagingAndSortingReporitory的抽象，它使得实体对象更容易进行分页
+
+事例2. PagingAndSortingReposiory
+
+```java
+public interface PagingAndSortingRepository<T, ID extends Serializable>
+  extends CrudRepository<T, ID> {
+
+  Iterable<T> findAll(Sort sort);
+
+  Page<T> findAll(Pageable pageable);
+}
+```
+
+访问每页20条数据第二页的用户信息你可以简单的这样做：
+
+```java
+PagingAndSortingRepository<User, Long> repository = // … get access to a bean
+Page<User> users = repository.findAll(new PageRequest(1, 20));
+```
+
+在增加的查询方法中，关键字的计数和删除查询都是有效的
+
+事例3. 关键字计数查询
+
+```java
+public interface UserRepository extends CrudRepository<User, Long> {
+
+  Long countByLastname(String lastname);
+}
+```
+
+事例4. 关键字删除查询
+
+```java
+public interface UserRepository extends CrudRepository<User, Long> {
+
+  Long deleteByLastname(String lastname);
+
+  List<User> removeByLastname(String lastname);
+
+}
+
+
