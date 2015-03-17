@@ -51,8 +51,13 @@
              * [基本审查](basics.md)
          * [JPA审查](jpa_auditing.md)
              * [审查配置](jpa_general_auditing_config.md)
-* [杂项](miscellaneous.md)
+* 杂项
      * [持久化单元的合并](merging_persistence_units.md)
          * [路径扫描@Entity类和JPA映射文件](entity_jpamappingfile.md)
      * [创建Repository实例集成](cdi_integration.md)
+* 附录
+     * [附录A:命名空间参考](namespace_reference.md)
+     * [附录B:填充命名空间参考](populators_namespace_reference.md)
+     * [附录C:Repository查询关键字](repo_query_keywords.md)
+     * [附录D:常见问答](question_ask.md)
 
