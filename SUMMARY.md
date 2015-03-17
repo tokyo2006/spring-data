@@ -26,7 +26,7 @@
          * [Repository填充器](repository_populators.md)
          * [保留的网络支持](legacy_web_support.md)
 * [参考文档](reference.md)
-       * [JPA Repositories](jpa_repository.md)
+     * [JPA Repositories](jpa_repository.md)
          * [介绍](introduction.md)
               * [Spring命名空间](spring_namespace.md)
               * [基于配置的声明](annotation_configuration.md)
