@@ -1,6 +1,6 @@
 # 使用Spring Data Repositories
 
-抽象Spring Data repositoryThe的目标是显著减少所需的数据访问层实现对各种持久存储的代码量。
+抽象Spring Data repository的目标是显著减少所需的数据访问层实现对各种持久存储的代码量。
 
 >Spring Data repository 文档和你的模块
 这一章节解释了Spring Data repository 的核心概念和它的接口。
