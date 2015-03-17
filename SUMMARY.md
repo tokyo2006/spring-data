@@ -47,4 +47,12 @@
          * [事务处理](transactionality.md)
              * [事务处理查询方法](transaction_query_methods.md)
          * [锁定](locking.md)
+         * [审查](auditing.md)
+             * [基本审查](basics.md)
+         * [JPA审查](jpa_auditing.md)
+             * [审查配置](jpa_general_auditing_config.md)
+* [杂项](miscellaneous.md)
+     * [持久化单元的合并](merging_persistence_units.md)
+         * [路径扫描@Entity类和JPA映射文件](entity_jpamappingfile.md)
+     * [创建Repository实例集成](cdi_integration.md)
 
