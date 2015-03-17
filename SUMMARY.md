@@ -17,6 +17,12 @@
        * 创建repository实例(creating_repository_instances.md)
          * XML配置(xml_configuration.md)
          * JavaConfig(java_config.md)
-         * 标准范围(standalone_usage.md)
+         * 独立使用(standalone_usage.md)
+       * 自定义实现Spring Data repositories(custom_impl_spring_data.md)
+         * 为单一的repositories添加自定义行为(add_custom_single.md)
+         * 为所有的repositories添加自定义行为(add_custom_all.md)
+       * Spring Data的扩展(spring_data_extensions.md)
+         * 网络支持(web_support.md)
+         * 
 * [参考文档](reference.md)
 
