@@ -19,3 +19,4 @@
      }
 ```
 
+你首先为你所有的领域接口定义了一个通用的基础接口并且暴露了findOne(...)和save(...)方法。这些方法会路由到由你选择的Spring Data数据处理方式实现基础仓库中，例如JPA SimpleJapRepository,因为他们在CrudRepository匹配到了这些方法签名。所以UserRepository可以保存用户而且可以通过id找到用户，同样的也可以通过他们的邮件地址查询找到这些用户。
