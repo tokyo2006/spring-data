@@ -26,4 +26,4 @@
 
 - 表达式通常会结合级联的操作来进行属性遍历。你可以结合表达式属性AND和OR。对于属性表达式你也可以使用可支持的操作比如Between,LessThan,GreaterThan ,Like。这些支持的操作由不同的数据存储而不同，所以你需要查看你参考的文档中合适的部分。
 - 方法解析支持为某些属性设置一个IgnoreCase标志(例如，findByLastnameIgnoreCase(...))或者为所有属性都支持忽略类型(通常是String实例，例如，findByLastnameAndFirstnameAllIgnoreCase(...))。是否支持ignoring cases 可能根据store不同而不同，所以相关部分在特殊库查询方法的参考文档中。
-- 你可以通过增加一个OrderBy字段在按照属性来升降序的查询方法中用来静态排序。想要创建一个查询方法能够支持动态排序，请看[特殊参数处理](special_parameter_handling)
+- 你可以通过增加一个OrderBy字段在按照属性来升降序的查询方法中用来静态排序。想要创建一个查询方法能够支持动态排序，请看[特殊参数处理](special_parameter_handling.md)
