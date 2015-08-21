@@ -21,3 +21,8 @@
          List<Person> findByLastnameOrderByFirstnameDesc(String lastname);
      }
 ```
+
+解析方法实际的结果依赖于你创建查询的持久存储。然后这里还算是有一些需要注意的事情。
+
+- 表达式通常会结合级联的操作来进行属性遍历。你可以结合表达式属性AND和OR。对于属性表达式你也可以使用可支持的操作比如Between,LessThan,GreaterThan ,Like。这些支持的操作由不同的数据存储而不同，所以你需要查看你参考的文档中合适的部分。
+- 方法解析支持为某些属性设置一个IgnoreCase标志（例如，findByLastnameIgnoreCase(...))或者为所有属性中支持忽略
