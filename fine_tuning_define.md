@@ -1,2 +1,3 @@
 # 调整repository定义
 
+通常你的Repository interface将会继承自Repository
