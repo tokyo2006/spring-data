@@ -1,2 +1,3 @@
 # 定义repository接口
 
+首先定义一个特别的实体类仓库接口。接口必须继承自Repository并且要定义为实体、模型类和一个ID类型。如果你想要为这个实体类实现CRUD操作，继承CrudRepository替换Repository
