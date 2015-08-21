@@ -14,7 +14,7 @@
            * [属性表达式](property_expressions.md)
            * [特殊参数处理](special_parameter_handling.md)
            * [限制查询](limiting_query.md)
-           * [流查询结果](streaming_queryresults.md)
+           * [流查询结果](streaming_query_results.md)
        * [创建repository实例](creating_repository_instances.md)
            * [XML配置](xml_configuration.md)
            * [JavaConfig](java_config.md)
