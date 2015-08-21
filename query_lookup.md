@@ -1,2 +1,5 @@
 # 查询查找策略
 
+以下策略可用于仓库基础结构来解决查询。你可以在XML配置中的命名空间通过query-lookup-strategy属性来配置策略或者在JAVA配置中通过Enable\$\{store\}Repositories声明queryLookupStrategy属性。有些策略可能对于特别的datastores并不支持。
+
+- CREATE 从查询方法名来尝试构建一个特别的数据查询。一般的方法都是从方法名称中移除已知设定好的前缀并且解析剩余的方法名。更多信息在查询创建[]
