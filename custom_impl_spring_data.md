@@ -1,2 +1,3 @@
 # 自定义实现Spring Data repositories
 
+有时候需要自定义实现一些repository的新方法。Spring Data repositories允许你很容易集成你自己实现的repostiroy功能，包括抽象的CRUD和查询功能
